@@ -1,11 +1,7 @@
-package seminars.lesson001.task001;
+package seminars.lesson001;
 
 import java.time.LocalDate;
 
-/*
-* Реализуйте класс Товар, содержащий данные о товаре, и ТорговыйАвтомат, содержащий в себе методы
-initProducts (List <Product>) сохраняющий в себе список исходных продуктов и getProduct(String name)
-* */
 public class Product {
     private String name;
     private double price;
@@ -31,5 +27,14 @@ public class Product {
 
     public LocalDate getReleaseDate() {
         return releaseDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", releaseDate=" + releaseDate +
+                '}';
     }
 }

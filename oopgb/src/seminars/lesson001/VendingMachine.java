@@ -1,4 +1,4 @@
-package seminars.lesson001.task001;
+package seminars.lesson001;
 
 import java.util.ArrayList;
 import java.util.List;
