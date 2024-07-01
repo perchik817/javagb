@@ -3,9 +3,9 @@ package seminars.lesson001;
 import java.time.LocalDate;
 
 public class Product {
-    private String name;
-    private double price;
-    private LocalDate releaseDate;
+    protected String name;
+    protected double price;
+    protected LocalDate releaseDate;
 
     public Product(String name, double price, LocalDate releaseDate) {
         this.name = name;

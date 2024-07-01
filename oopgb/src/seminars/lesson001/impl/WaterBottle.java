@@ -34,4 +34,16 @@ public class WaterBottle extends Product {
     public boolean isSparkled() {
         return isSparkled;
     }
+
+    @Override
+    public String toString() {
+        return "WaterBottle{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", releaseDate=" + releaseDate +
+                "volume=" + volume +
+                ", pack='" + pack + '\'' +
+                ", isSparkled=" + isSparkled +
+                '}';
+    }
 }
