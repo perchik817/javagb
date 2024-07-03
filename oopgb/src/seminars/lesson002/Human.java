@@ -1,23 +1,14 @@
 package seminars.lesson002;
 
 public class Human extends Actor{
-    public Human(String name, boolean isMakeOrder, boolean isTakeOrder) {
-        super(name, isMakeOrder, isTakeOrder);
+
+    public Human(String name) {
+        super(name);
     }
 
     @Override
     public String getName() {
         return name;
-    }
-
-    @Override
-    public void setMakeOrder(boolean makeOrder) {
-        this.isMakeOrder = makeOrder;
-    }
-
-    @Override
-    public void setTakeOrder(boolean takeOrder) {
-        this.isTakeOrder = takeOrder;
     }
 
     @Override
@@ -28,5 +19,15 @@ public class Human extends Actor{
     @Override
     public boolean isTakeOrder() {
         return isTakeOrder;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", isMakeOrder=" + isMakeOrder +
+                ", isTakeOrder=" + isTakeOrder +
+                ", order=" + order +
+                '}';
     }
 }
