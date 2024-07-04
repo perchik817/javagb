@@ -4,9 +4,10 @@ import java.util.Iterator;
 
 public class StudentGroup implements Iterable<Student> {
 
-    StringBuilder students = new StringBuilder();
+    public StringBuilder students = new StringBuilder();
+
     public void addStudent(Student student) {
-        students.append(student).append("\n");
+        students.append(student).append(" ");
     }
 
     @Override

@@ -9,4 +9,9 @@ public class Controller {
         studyGroupService.removeStudentByName(name);
         System.out.println("Student " + name + " has been removed.");
     }
+
+    public void sortStudentsById() {
+        studyGroupService.compareById();
+        System.out.println("Students have been sorted by ID.");
+    }
 }
