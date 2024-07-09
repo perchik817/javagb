@@ -1,9 +1,6 @@
 package seminars.lesson004.models;
 
-import java.time.LocalDate;
-
 public class Student extends User{
-
 
     public Student(int id, String name, String surname) {
         this.id = id;
@@ -11,4 +8,8 @@ public class Student extends User{
         this.surname = surname;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Student [id=%d, name=%s, surname=%s]", id, name, surname);
+    }
 }

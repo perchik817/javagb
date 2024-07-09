@@ -2,9 +2,6 @@ package seminars.lesson004.models;
 
 import seminars.lesson004.util.UserComparator;
 
-import java.time.LocalDate;
-import java.util.Comparator;
-
 public abstract class User extends UserComparator<User> implements Comparable<User> {
     protected int id;
     protected String name;
