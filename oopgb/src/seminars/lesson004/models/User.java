@@ -35,4 +35,5 @@ public abstract class User extends UserComparator<User> implements Comparable<Us
     public void setSurname(String surname) {
         this.surname = surname;
     }
+
 }
