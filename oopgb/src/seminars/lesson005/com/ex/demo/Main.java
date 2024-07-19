@@ -1,9 +1,9 @@
 package seminars.lesson005.com.ex.demo;
 
-import seminars.lesson005.com.ex.demo.view.StudentView;
+import seminars.lesson005.com.ex.demo.view.MainView;
 
 public class Main {
     public static void main(String[] args) {
-        new StudentView().start();
+        new MainView().start();
     }
 }

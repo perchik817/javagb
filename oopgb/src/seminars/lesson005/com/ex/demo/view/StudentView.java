@@ -12,18 +12,18 @@ public class StudentView {
 
     public void start(){
         Scanner scanner = new Scanner(System.in);
-        Database.fillDb();
+//        Database.fillDb();
         while(true){
-            System.out.println("----------WELCOME----------" +
+            System.out.println("------WORK WITH STUDENTS------" +
                     "\n1. Create student" +
                     "\n2. Get student by id" +
                     "\n3. Get all students" +
-                    "\n4. Exit");
+                    "\n4. Go back to the main view");
             switch (scanner.nextInt()){
                 case 1 -> createStudent();
                 case 2 -> getStudentById();
                 case 3 -> getAllStudents();
-                case 4 -> System.exit(0);
+                case 4 -> {return;}
                 default -> System.out.println("Invalid option");
             }
         }
@@ -35,9 +35,9 @@ public class StudentView {
         String name = scanner.nextLine();
         System.out.println("Enter student surname: ");
         String surname = scanner.nextLine();
-        System.out.println("Enter student group number: ");
-        int groupId = scanner.nextInt();
-        Student s = controller.createStudent(name, surname, groupId);
+//        System.out.println("Enter student group number: ");
+//        int groupId = scanner.nextInt();
+        Student s = controller.createStudent(name, surname);
         System.out.println(s);
         return s;
     }

@@ -8,19 +8,19 @@ import java.util.List;
 public class StudentController {
     private final StudentService service = new StudentService();
 
-    public Student createStudent(String name, String surname, int groupId){
-        return service.createStudent(name, surname, groupId);
+    public Student createStudent(String name, String surname){
+        return service.createUser(name, surname);
     }
 
     public Student getStudentById(int id){
         try {
-            return service.getStudentById(id);
+            return service.getUserById(id);
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());
         }
     }
 
     public List<Student> getAllStudents(){
-        return service.getAllStudents();
+        return service.getAllUsers();
     }
 }
