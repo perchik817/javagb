@@ -1,7 +1,6 @@
 package seminars.solid_principle.isp1.pay.impl;
 
-import isp1.pay.Payable;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import seminars.solid_principle.isp1.pay.Payable;
 
 public class TerminalPaymentService implements Payable {
 
@@ -13,10 +12,5 @@ public class TerminalPaymentService implements Payable {
     @Override
     public void payCreditCard(int amount) {
         System.out.printf("Terminal pay by credit card %d\n", amount);
-    }
-
-    @Override
-    public void payPhoneNumber(int amount) {
-        throw new NotImplementedException();
     }
 }

@@ -1,16 +1,16 @@
 package seminars.solid_principle.lsp1.view;
 
-import lsp1.shape.Rectangle;
+import seminars.solid_principle.lsp1.shape.Quadrilateral;
 
 public class ShapeView {
-    private final Rectangle rectangle;
+    private final Quadrilateral quadrilateral;
 
-    public ShapeView(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    public ShapeView(Quadrilateral quadrilateral) {
+        this.quadrilateral = quadrilateral;
     }
 
     public void showArea() {
-        System.out.print("Area of rectangle equal:");
-        System.out.println(rectangle.getArea());
+        System.out.print("Area of quadrilateral equals:");
+        System.out.println(quadrilateral.getArea());
     }
 }

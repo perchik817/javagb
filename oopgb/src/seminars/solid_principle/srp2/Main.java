@@ -1,7 +1,6 @@
 package seminars.solid_principle.srp2;
 
 import seminars.solid_principle.srp2.model.Order;
-import srp2.model.Order;
 
 public class Main {
     public static void main(String[] args) {

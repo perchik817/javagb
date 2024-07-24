@@ -1,6 +1,5 @@
 package seminars.solid_principle.ocp1.shape.impl;
 
-import ocp1.shape.Shape;
 import seminars.solid_principle.ocp1.shape.Shape;
 
 public class RightTriangle implements Shape {
@@ -24,5 +23,10 @@ public class RightTriangle implements Shape {
 
     public double getHypotenuse() {
         return hypotenuse;
+    }
+
+    @Override
+    public double getArea() {
+        return getLeg1() * getLeg2() / 2.0;
     }
 }

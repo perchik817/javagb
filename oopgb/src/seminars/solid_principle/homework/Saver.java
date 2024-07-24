@@ -1,9 +1,9 @@
 package seminars.solid_principle.homework;
 
-public class Persister{
+public class Saver {
     private final User user;
 
-    public Persister(User user){
+    public Saver(User user){
         this.user = user;
     }
 

@@ -1,6 +1,6 @@
 package seminars.solid_principle.lsp2.util;
 
-import lsp2.model.Order;
+import seminars.solid_principle.lsp2.model.Order;
 
 import java.util.ArrayList;
 import java.util.Iterator;

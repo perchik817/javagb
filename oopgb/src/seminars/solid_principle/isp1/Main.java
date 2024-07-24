@@ -1,7 +1,8 @@
 package seminars.solid_principle.isp1;
 
-import isp1.pay.impl.InternetPaymentService;
-import isp1.pay.impl.TerminalPaymentService;
+
+import seminars.solid_principle.isp1.pay.impl.InternetPaymentService;
+import seminars.solid_principle.isp1.pay.impl.TerminalPaymentService;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,5 @@ public class Main {
         TerminalPaymentService terminalService = new TerminalPaymentService();
         terminalService.payWebMoney(10);
         terminalService.payCreditCard(10);
-        terminalService.payPhoneNumber(10);
     }
 }

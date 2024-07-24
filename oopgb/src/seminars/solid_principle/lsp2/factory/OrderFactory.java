@@ -1,7 +1,6 @@
 package seminars.solid_principle.lsp2.factory;
 
-import lsp2.model.Order;
-import lsp2.model.OrderBonus;
+import seminars.solid_principle.lsp2.model.*;
 
 public class OrderFactory {
     public Order create(int quantity, int price, boolean isBonus) {

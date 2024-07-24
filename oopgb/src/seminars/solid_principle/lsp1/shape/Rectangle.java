@@ -1,6 +1,6 @@
 package seminars.solid_principle.lsp1.shape;
 
-public class Rectangle {
+public class Rectangle implements Quadrilateral{
     private int sideA;
     private int sideB;
 
@@ -8,6 +8,8 @@ public class Rectangle {
         this.setSideA(sideA);
         this.setSideB(sideB);
     }
+
+    public Rectangle(){}
 
     public int getSideA() {
         return sideA;
@@ -25,7 +27,7 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
-    public int getArea() {
+    public double getArea() {
         return sideA * sideB;
     }
 }

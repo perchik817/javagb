@@ -12,8 +12,8 @@ public class User{
     }
 
     public void save(){
-        Persister persister = new Persister(this);
-        persister.save();
+        Saver saver = new Saver(this);
+        saver.save();
     }
 
     public void report(){

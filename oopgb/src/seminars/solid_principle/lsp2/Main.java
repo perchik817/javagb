@@ -1,8 +1,9 @@
 package seminars.solid_principle.lsp2;
 
-import lsp2.factory.OrderFactory;
-import lsp2.model.Order;
-import lsp2.util.OrderCalculator;
+
+import seminars.solid_principle.lsp2.factory.OrderFactory;
+import seminars.solid_principle.lsp2.model.Order;
+import seminars.solid_principle.lsp2.util.OrderCalculator;
 
 public class Main {
     public static void main(String[] args) {

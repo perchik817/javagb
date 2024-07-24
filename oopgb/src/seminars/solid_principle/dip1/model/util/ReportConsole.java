@@ -4,11 +4,12 @@ import seminars.solid_principle.dip1.model.ReportItem;
 
 import java.util.List;
 
-public class ReportPrinter extends PrintOut{
+public class ReportConsole extends PrintOut{
+    @Override
     public void output(List<ReportItem> items) {
-        System.out.println("Output to printer");
+        System.out.println("Print in report console");
         for (ReportItem item : items) {
-            System.out.format("printer %s - %f \n\r", item.getDescription(), item.getAmount());
+            System.out.println(item.toString());
         }
     }
 }
