@@ -2,7 +2,6 @@ package seminars.solid_principle.homework.view;
 
 import seminars.solid_principle.homework.controller.UserController;
 import seminars.solid_principle.homework.model.User;
-import seminars.solid_principle.homework.service.SaverService;
 
 import java.util.Scanner;
 
