@@ -1,4 +1,4 @@
-package patterns.behavioral.pubsub.task.pubsub;
+package seminars.lesson007.ooppatterns.behavioral.pubsub.task.pubsub;
 
 /**
   Video channel's admin.

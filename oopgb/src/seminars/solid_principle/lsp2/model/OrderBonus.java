@@ -8,6 +8,6 @@ public class OrderBonus extends Order{
 
     @Override
     public int getAmount() {
-        return 0;
+        return quantity * price;
     }
 }

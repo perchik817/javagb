@@ -1,6 +1,7 @@
-package patterns.structural.wrappers.proxy;
-import patterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadService;
-import patterns.structural.wrappers.proxy.task.downloaders.view.View;
+package seminars.lesson007.ooppatterns.structural.wrappers.proxy;
+
+import seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadService;
+import seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.view.View;
 
 /**
  * Ускорить работу программы, не меняя PictureDownloadService.

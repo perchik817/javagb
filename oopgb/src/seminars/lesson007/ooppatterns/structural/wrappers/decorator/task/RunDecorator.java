@@ -1,6 +1,7 @@
-package patterns.structural.wrappers.decorator.task;
+package seminars.lesson007.ooppatterns.structural.wrappers.decorator.task;
 
-import patterns.structural.wrappers.decorator.task.impl.Calculator;
+
+import seminars.lesson007.ooppatterns.structural.wrappers.decorator.task.impl.Calculator;
 
 /**
   Task: You'll need to add logging to calculator's methods. Calculator's class must stay without any changes.

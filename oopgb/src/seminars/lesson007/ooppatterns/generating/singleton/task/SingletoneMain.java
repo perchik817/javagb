@@ -1,4 +1,4 @@
-package patterns.generating.singleton.task;
+package seminars.lesson007.ooppatterns.generating.singleton.task;
 
 /**
  Make the database class a singleton

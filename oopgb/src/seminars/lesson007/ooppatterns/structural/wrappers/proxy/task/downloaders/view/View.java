@@ -1,6 +1,7 @@
-package patterns.structural.wrappers.proxy.task.downloaders.view;
+package seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.view;
 
-import patterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadService;
+
+import seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.impl.PictureDownloadService;
 
 import java.util.Scanner;
 

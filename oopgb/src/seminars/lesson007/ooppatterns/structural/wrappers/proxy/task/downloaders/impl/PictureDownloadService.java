@@ -1,6 +1,7 @@
-package patterns.structural.wrappers.proxy.task.downloaders.impl;
+package seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.impl;
 
-import patterns.structural.wrappers.proxy.task.downloaders.validators.PictureComparator;
+
+import seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.validators.PictureComparator;
 
 import java.io.InputStream;
 import java.net.URL;

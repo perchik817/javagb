@@ -1,8 +1,8 @@
 package seminars.solid_principle.lsp2.model;
 
 public class Order {
-    private final int price;
-    private final int quantity;
+    protected final int price;
+    protected final int quantity;
 
     public Order(int quantity, int price) {
         this.price = price;

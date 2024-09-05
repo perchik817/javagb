@@ -1,4 +1,4 @@
-package patterns.structural.wrappers.proxy.task.downloaders.validators;
+package seminars.lesson007.ooppatterns.structural.wrappers.proxy.task.downloaders.validators;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

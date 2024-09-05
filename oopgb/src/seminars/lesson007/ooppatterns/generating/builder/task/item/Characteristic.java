@@ -1,4 +1,4 @@
-package seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item;
+package seminars.lesson007.ooppatterns.generating.builder.task.item;
 
 public class Characteristic {
     private String brand;

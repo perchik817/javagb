@@ -1,4 +1,4 @@
-package seminars.lesson007.ooppatterns.behavioral.pubsub;
+package seminars.lesson007.ooppatterns.behavioral;
 
 public class MyIterator {
 }

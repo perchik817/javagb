@@ -1,4 +1,4 @@
-package seminars.lesson007.ooppatterns.behavioral.pubsub.strategy.task;
+package seminars.lesson007.ooppatterns.behavioral.strategy.task;
 
 import java.util.Scanner;
 

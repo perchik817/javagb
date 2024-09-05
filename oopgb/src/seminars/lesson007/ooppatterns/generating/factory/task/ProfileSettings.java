@@ -1,4 +1,4 @@
-package patterns.generating.factory.task;
+package seminars.lesson007.ooppatterns.generating.factory.task;
 
 public enum ProfileSettings {
     DEV("dev"), PROD("prod");

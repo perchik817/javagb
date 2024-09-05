@@ -1,7 +1,7 @@
-package seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.impl;
+package seminars.lesson007.ooppatterns.generating.builder.task.item.impl;
 
-import seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.Characteristic;
-import seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.Item;
+import seminars.lesson007.ooppatterns.generating.builder.task.item.Characteristic;
+import seminars.lesson007.ooppatterns.generating.builder.task.item.Item;
 
 public class Bike extends Item {
 

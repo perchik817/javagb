@@ -1,4 +1,4 @@
-package patterns.structural.wrappers.decorator.task;
+package seminars.lesson007.ooppatterns.structural.wrappers.decorator.task;
 
 /**
  Abstraction describing the behavior of computing objects.

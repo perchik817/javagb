@@ -1,4 +1,4 @@
-package patterns.generating.factory.task;
+package seminars.lesson007.ooppatterns.generating.factory.task;
 
 import java.util.HashMap;
 import java.util.Map;

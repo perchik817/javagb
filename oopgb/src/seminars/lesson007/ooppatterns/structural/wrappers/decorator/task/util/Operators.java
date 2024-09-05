@@ -1,4 +1,4 @@
-package patterns.structural.wrappers.decorator.task.util;
+package seminars.lesson007.ooppatterns.structural.wrappers.decorator.task.util;
 
 /**
  Valid Mathematical Operations.

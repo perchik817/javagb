@@ -1,4 +1,4 @@
-package patterns.generating.factory;
+package seminars.lesson007.ooppatterns.generating.factory;
 
 /**
   Depending on the development profile, whether to prompt the developer for a password

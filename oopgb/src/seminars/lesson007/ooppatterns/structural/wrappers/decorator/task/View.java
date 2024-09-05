@@ -1,6 +1,6 @@
-package patterns.structural.wrappers.decorator.task;
+package seminars.lesson007.ooppatterns.structural.wrappers.decorator.task;
 
-import patterns.structural.wrappers.decorator.task.util.Operators;
+import seminars.lesson007.ooppatterns.structural.wrappers.decorator.task.util.Operators;
 
 import java.util.Arrays;
 import java.util.List;

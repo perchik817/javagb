@@ -1,8 +1,8 @@
-package seminars.lesson007.ooppatterns.behavioral.generating.builder.task;
+package seminars.lesson007.ooppatterns.generating.builder.task;
 
-import seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.Characteristic;
-import seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.Item;
-import seminars.lesson007.ooppatterns.behavioral.generating.builder.task.item.impl.Bike;
+import seminars.lesson007.ooppatterns.generating.builder.task.item.Characteristic;
+import seminars.lesson007.ooppatterns.generating.builder.task.item.Item;
+import seminars.lesson007.ooppatterns.generating.builder.task.item.impl.Bike;
 
 /**
  Using the builder pattern, correct the characteristic class code

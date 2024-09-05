@@ -1,4 +1,4 @@
-package patterns.structural.wrappers.facade.task;
+package seminars.lesson007.ooppatterns.structural.wrappers.facade.task;
 
 import java.util.Arrays;
 

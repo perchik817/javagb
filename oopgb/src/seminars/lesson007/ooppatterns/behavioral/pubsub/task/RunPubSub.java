@@ -1,4 +1,8 @@
-package seminars.lesson007.ooppatterns.behavioral.pubsub.task.pubsub;
+package seminars.lesson007.ooppatterns.behavioral.pubsub.task;
+
+import seminars.lesson007.ooppatterns.behavioral.pubsub.task.pubsub.Subscriber;
+import seminars.lesson007.ooppatterns.behavioral.pubsub.task.pubsub.Video;
+import seminars.lesson007.ooppatterns.behavioral.pubsub.task.pubsub.VideoChannel;
 
 import java.time.LocalDateTime;
 

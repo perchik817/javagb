@@ -2,7 +2,6 @@ package seminars.lesson005.com.ex.demo.view;
 
 import seminars.lesson005.com.ex.demo.controller.StudyGroupController;
 import seminars.lesson005.com.ex.demo.model.StudyGroup;
-import seminars.lesson005.com.ex.demo.model.Teacher;
 
 import java.util.Arrays;
 import java.util.List;

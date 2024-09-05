@@ -1,6 +1,7 @@
-package patterns.structural.wrappers.decorator.task.impl;
+package seminars.lesson007.ooppatterns.structural.wrappers.decorator.task.impl;
 
-import patterns.structural.wrappers.decorator.task.Calculable;
+
+import seminars.lesson007.ooppatterns.structural.wrappers.decorator.task.Calculable;
 
 /**
  * Object of calculator closed for any changes(final);
