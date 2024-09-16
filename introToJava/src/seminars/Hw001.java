@@ -21,12 +21,30 @@ public class Hw001 {
         Напишите метод sumDigits, который принимает целое число n и возвращает
         сумму его цифр.
         */
-        int n = 12345;
-        System.out.println("Sum of digits in " + n + " is " + ans.sumDigits(n));
+        //int n = 12345;
+        //System.out.println("Sum of digits in " + n + " is " + ans.sumDigits(n));
+
+        /*Задача 4*. Нахождение максимального из трех чисел
+        Реализуйте две функции:
+        1. Функция findMaxOfTwo должна принимать два числа и возвращать
+        максимальное из них, используя только знак сравнения.
+        2. Функция findMaxOfThree должна принимать три числа и находить
+        максимальное из них, используя первую функцию.*/
+        int a = 5, b = 10, c = 3;
+        System.out.println("The max number is: " + ans.findMaxOfThree(a, b, c));
     }
 }
 
 class Answer {
+    public int findMaxOfTwo(int n1, int n2){
+        return n1 > n2 ? n1 : n2;
+    }
+    public int findMaxOfThree(int n1, int n2, int n3){
+//        int max = findMaxOfTwo(n1, n2);
+//        if(max < n3) max = n3;
+//        return max;
+        return findMaxOfTwo(n1, findMaxOfTwo(n2, n3));
+    }
     public int sumDigits(int num){
         int sum = 0;
         while (num != 0){
