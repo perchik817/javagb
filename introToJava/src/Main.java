@@ -26,6 +26,8 @@ public class Main {
         //В консоли запросить имя пользователя. В зависимости от текущего времени, вывести приветствие вида
         //"Доброе утро, <Имя>!", если время от 05:00 до 11:59
         //"Добрый день, <Имя>!", если время от 12:00 до 17:59;
+        //"Добрый вечер, <Имя>!", если время от 18:00 до 22:59;
+        // "Доброй ночи, <Имя>!", если время от 23:00 до 4:59
         Scanner sc = new Scanner(System.in);
         System.out.print("Dein Vorname ist: ");
         String name = sc.nextLine();
@@ -34,6 +36,8 @@ public class Main {
             System.out.printf("Guten Morgen, %s!", name);
         else if (localTime.isAfter(LocalTime.of(12, 0)) && localTime.isBefore(LocalTime.of(17, 59)))
             System.out.printf("Guten Tag, %s!", name);
+        else if (localTime.isBefore(LocalTime.of(18, 0)) && localTime.isAfter(LocalTime.of(22, 59)))
+            System.out.printf("Guten Abend %s!", name);
         else
             System.out.printf("Gute Nacht, %s!", name);
         sc.close();
