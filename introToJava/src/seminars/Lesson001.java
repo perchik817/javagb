@@ -3,7 +3,6 @@ package seminars;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 public class Lesson001 {
     public static void main(String[] args) {
