@@ -1,12 +1,13 @@
 package seminars;
 
+import java.util.Scanner;
+
 public class Hw001 {
     public static void main(String[] args) {
+        Answer ans = new Answer();
         /*Задание 1. Нахождение факториала числа
         Напишите метод factorial, который принимает число n и возвращает его
         факториал. Если число n < 0, метод должен вернуть -1.*/
-
-        Answer ans = new Answer();
         //int n = 5;
         //int fact = ans.factorial(n);
         //System.out.println("Factorial of " + n + " is: " + fact);
@@ -20,10 +21,20 @@ public class Hw001 {
         Напишите метод sumDigits, который принимает целое число n и возвращает
         сумму его цифр.
         */
+        int n = 12345;
+        System.out.println("Sum of digits in " + n + " is " + ans.sumDigits(n));
     }
 }
 
 class Answer {
+    public int sumDigits(int num){
+        int sum = 0;
+        while (num != 0){
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
     public void printEvenNums(){
         for(int i = 2; i <= 100; i+=2){
             System.out.println(i);
