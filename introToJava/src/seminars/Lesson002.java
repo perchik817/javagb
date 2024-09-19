@@ -1,12 +1,14 @@
 package seminars;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Lesson002 {
+    private static Logger LOGGER = Log.log(Lesson002.class.getName());
     public static void main(String[] args) {
         //private methods are not in api, bcs others can't use them in their program
         //api is all that makes possible to use and make to others
@@ -26,12 +28,14 @@ public class Lesson002 {
         //error - уровень логирования для критических ошибок приложения (закончилась память, отвалилась бд и т.п.)
         // debug - уровень логирования, к-ый следуют использовать для фиксирования отладочной инфо
         //warning - н-р, вы используете устаревшую версию библ, которая может вызвать проблемы в будущем, пжл обновите
-        //logging - журналирование всевозможных ошибок
+        //logging - журналирование всевозможных ошибок. логами нужно покрывать узкие (проблемные) места кода
 
         /*Напишите метод, который вернет содержимое текущей папки в виде массива строк.
         Напишите метод, который запишет массив, возвращенный предыдущим методом в файл.
         Обработайте ошибки с помощью try-catch конструкции. В случае возникновения исключения, оно должно записаться в
         лог-файл.*/
+
+        LOGGER.log(Level.INFO, "App is launched");
         readFileNames("C:\\aaa");
         String out = "C:\\Users\\User\\Desktop\\Kyz Saikal";
         System.out.println(Arrays.toString(readFilesNamesInDir(out)));
@@ -47,11 +51,13 @@ public class Lesson002 {
                 fileWriter.write(file + "\n");
             }
         } catch (IOException e) {
+            LOGGER.log(Level.SEVERE, "Error writing to file", e);
             throw new RuntimeException(e);
         }finally {
             try{
                 fileWriter.close();
             }catch (IOException e){
+                LOGGER.log(Level.SEVERE,"Error closing file writer", e);
                 throw new RuntimeException("Error closing file writer");
             }
         }
@@ -67,6 +73,7 @@ public class Lesson002 {
             }
             return names;
         }else {
+            LOGGER.log(Level.SEVERE, "File is not a directory");
             throw new RuntimeException("File is not a directory");
         }
     }
@@ -82,6 +89,7 @@ public class Lesson002 {
                     }
                 }
             } else {
+                LOGGER.log(Level.SEVERE, "File is not a directory");
                 throw new RuntimeException("File is not a directory");
             }
         } catch (Exception e) {
