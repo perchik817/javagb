@@ -1,4 +1,4 @@
-package seminars;
+package seminars.l001;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;

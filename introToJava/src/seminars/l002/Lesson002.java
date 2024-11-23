@@ -1,4 +1,6 @@
-package seminars;
+package seminars.l002;
+
+import seminars.Log;
 
 import java.io.File;
 import java.io.FileWriter;

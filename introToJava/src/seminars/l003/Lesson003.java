@@ -1,8 +1,6 @@
-package seminars;
+package seminars.l003;
 
 import java.util.*;
-
-import static java.lang.Integer.*;
 
 public class Lesson003 {
 

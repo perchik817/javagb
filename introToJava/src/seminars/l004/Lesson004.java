@@ -1,4 +1,4 @@
-package seminars;
+package seminars.l004;
 
 import java.util.*;
 
