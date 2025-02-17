@@ -19,16 +19,4 @@ public class DelOddStr {
         }
         ll.removeAll(toRemove);
     }
-    public static void main(String[] args) {
-        DelOddStr task1 = new DelOddStr();
-        LinkedList<String> ll = new LinkedList<>();
-        ll.add("apple");
-        ll.add("banana");
-        ll.add("pear");
-        ll.add("grape");
-        System.out.println(ll);
-        task1.removeOddLengthStrings(ll);
-        System.out.println(ll);
-
-    }
 }
