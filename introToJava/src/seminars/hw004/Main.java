@@ -1,5 +1,8 @@
 package seminars.hw004;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         /*
@@ -13,7 +16,7 @@ public class Main {
         task1.removeOddLengthStrings(ll);
         System.out.println(ll);
         */
-
+        /*
         MyStack stack = new MyStack();
 
         stack.push("apple");
@@ -25,6 +28,10 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println(stack.getElements());
         System.out.println(stack.peek());
+        */
 
+        LinkedList<String> list = new LinkedList<>(List.of("apple", "banana", "apple", "pear", "banana", "banana"));
+        String value = "banana";
+        System.out.println("Occurrences of \"" + value + "\": " + ListUtils.countOccurrences(list, value));
     }
 }
