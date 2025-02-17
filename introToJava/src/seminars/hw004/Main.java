@@ -1,5 +1,6 @@
 package seminars.hw004;
 
+import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -30,8 +31,16 @@ public class Main {
         System.out.println(stack.peek());
         */
 
+        /*
         LinkedList<String> list = new LinkedList<>(List.of("apple", "banana", "apple", "pear", "banana", "banana"));
         String value = "banana";
         System.out.println("Occurrences of \"" + value + "\": " + ListUtils.countOccurrences(list, value));
+        */
+
+        Deque<Integer> deque = new LinkedList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        int n = -3;
+        DequeTasks.rotateDeque(deque, n);
+        System.out.println(deque);
+
     }
 }
