@@ -1,8 +1,13 @@
 package seminars.hw004;
-//Задача 4. Сдвиг очереди
-//Реализуйте метод rotateDeque в классе DequeTasks, который принимает
-//Deque<Integer> и число n. Метод должен повернуть очередь вправо на n
-//позиций. Если n отрицательное, повернуть влево.
+/*Задача 4. Сдвиг очереди
+    Реализуйте метод rotateDeque в классе DequeTasks, который принимает
+    Deque<Integer> и число n. Метод должен повернуть очередь вправо на
+    n позиций. Если n отрицательное, повернуть влево.*/
+
+/*Задача 5*. Удаление слова из очереди
+    Реализуйте метод removeAllOccurrences в классе DequeTasks, который
+    принимает Deque<String> и строку value. Метод должен удалить все
+    вхождения строки value из очереди.*/
 
 //Подсказка № 1
 //Для вращения очереди вправо на n позиций используйте метод addLast для
@@ -20,6 +25,7 @@ package seminars.hw004;
 //Используйте цикл, чтобы повторить операцию добавления и удаления элемента из
 //очереди n раз, где n — количество позиций, на которые нужно вращать очередь.
 //Убедитесь, что очередь не пуста, прежде чем выполнять операции.
+
 import java.util.Deque;
 
 public class DequeTasks {
@@ -33,5 +39,10 @@ public class DequeTasks {
         for (int i = 0; i < n; i++) {
             deque.addLast(deque.removeFirst());
         }
+    }
+
+    public static void removeAllOccurrences(Deque<String> deque, String value) {
+        deque.removeIf(s -> s.equals(value));
+        System.out.println(deque);
     }
 }

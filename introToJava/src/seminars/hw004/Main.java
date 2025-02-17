@@ -37,10 +37,16 @@ public class Main {
         System.out.println("Occurrences of \"" + value + "\": " + ListUtils.countOccurrences(list, value));
         */
 
+        /*
         Deque<Integer> deque = new LinkedList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         int n = -3;
         DequeTasks.rotateDeque(deque, n);
         System.out.println(deque);
+        */
+
+        Deque<String> deque = new LinkedList<>(List.of("apple", "banana", "apple", "cherry"));
+        String value = "apple";
+        DequeTasks.removeAllOccurrences(deque, value);
 
     }
 }
