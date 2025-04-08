@@ -1,11 +1,24 @@
 package seminars.hw005;
 
+import java.util.Arrays;
+
 public class Printer {
     public static void main(String[] args) {
         Printer printer = new Printer();
         //printer.task01();
         //printer.task02();
-        printer.task03();
+        //printer.task03();
+        printer.task04();
+    }
+
+    private void task04() {
+        int[] initArray = new int[]{38, 27, 43, 3, 9, 82, 10};
+
+        System.out.println("Initial array:");
+        System.out.println(Arrays.toString(initArray));
+        MergeSort.mergeSort(initArray);
+        System.out.println("Sorted array:");
+        System.out.println(Arrays.toString(initArray));
     }
 
     private void task03() {
