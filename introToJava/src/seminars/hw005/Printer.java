@@ -2,6 +2,21 @@ package seminars.hw005;
 
 public class Printer {
     public static void main(String[] args) {
+        Printer printer = new Printer();
+        //printer.task01();
+        printer.task02();
+    }
+
+    private void task02(){
+        BrowserHistory browserHistory = new BrowserHistory();
+        browserHistory.visitSite("google.com");
+        browserHistory.visitSite("stackoverflow.com");
+        browserHistory.visitSite("github.com");
+        System.out.println(browserHistory.back(2));
+        System.out.println(browserHistory.getHistory());
+    }
+
+    private void task01(){
         StudentDirectory directory = new StudentDirectory();
         directory.addStudent("Alice", 90);
         directory.addStudent("Bob", 85);
